@@ -22,7 +22,7 @@ fetch (url)
     .then (res => res.json ())
     .then (data => {
         console.log(data);
-        document.querySelector('h3').innerText = data.main.temp
+        document.querySelector('h3').innerText = data.main.temp + "°" + ' ' + "Fahrenheit"
     })
     .catch (error => {
         console.log(`error ${error}`);
